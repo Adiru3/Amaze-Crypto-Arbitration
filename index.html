@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazeArb - The Ultimate Crypto Arbitrage Bot</title>
+    <style>
+        :root {
+            --primary: #00ff88;
+            --secondary: #00ccff;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(0,255,136,0.1) 0%, rgba(0,204,255,0.1) 100%);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            margin-bottom: 2rem;
+            border-radius: 0 0 2rem 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: #000;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 999px;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary);
+            padding-left: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--secondary);
+        }
+
+        .privacy-box {
+            background: rgba(30, 41, 59, 0.8);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .privacy-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .privacy-item strong {
+            display: block;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 4rem;
+        }
+
+        a { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AmazeArb</h1>
+            <p class="subtitle">High-Performance Crypto Arbitrage Bot</p>
+            <p>Scan 15+ CEX/DEX &bull; Spot 500%+ Spreads &bull; Execute Instantly</p>
+            <a href="http://t.me/AmazeArbbot" class="cta-button">🚀 Start Bot Now</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>🔥 Why AmazeArb?</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🌍 Global Scanner</h3>
+                    <p>Monitors 1,700+ trading pairs across 15+ major exchanges (Binance, Bybit, KuCoin) and Solana DEXs in real-time.</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ Top Spreads</h3>
+                    <p>Instantly identifies the most profitable arbitrage opportunities with spreads up to 500%.</p>
+                </div>
+                <div class="card">
+                    <h3>🤖 Auto-Execution</h3>
+                    <p>Millisecond-precision trading with our advanced Executor module. Never miss a price gap.</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 Secure</h3>
+                    <p>Your API keys are encrypted AES-256 and stored locally on your device. We never touch your funds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="privacy">
+            <h2>🛡️ Privacy Policy</h2>
+            <p>At AmazeArb, we prioritize your security and anonymity.</p>
+            
+            <div class="privacy-box">
+                <div class="privacy-item">
+                    <strong>1. Data Collection</strong>
+                    We specifically only collect your Telegram User ID (for subscription management) and store your Encrypted API Keys locally on your device.
+                </div>
+
+                <div class="privacy-item">
+                    <strong>2. Data Usage</strong>
+                    Your User ID is used strictly for authentication. Your API keys are used <em>only</em> by the bot running on your local machine to execute trades you authorize.
+                </div>
+
+                <div class="privacy-item">
+                    <strong>3. No Data Sharing</strong>
+                    We do not share, sell, rent, or expose your personal data or trading history to any third parties.
+                </div>
+
+                <div class="privacy-item">
+                    <strong>4. Security Architecture</strong>
+                    All sensitive data is encrypted at rest using industry-standard AES encryption.
+                </div>
+
+                <div class="privacy-item">
+                    <strong>5. User Control</strong>
+                    You retain full control. You can delete your data at any time by clearing the bot's database or using the <code>/reset</code> command.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>AmazeArb &copy; 2026. All rights reserved.</p>
+        <p>Contact Developer: <a href="https://t.me/Adiru">@Adiru</a></p>
+    </footer>
+</body>
+</html>
